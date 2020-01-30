@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
+from selenium import webdriver
+from  selenium.webdriver.chrome.options import Options
+
+chorme_options = Options()
+chorme_options.add_argument("--headless")
+chorme_options.add_argument("--disable-gpu")
 
 class NeinSpider(scrapy.Spider):
     name = 'nein'
