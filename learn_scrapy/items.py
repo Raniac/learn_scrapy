@@ -12,3 +12,10 @@ class LearnScrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class MaoyanreyingItem(scrapy.Item):
+    index = scrapy.Field()
+    title = scrapy.Field()
+    star = scrapy.Field()
+    releasetime = scrapy.Field()
+    score = scrapy.Field()
