@@ -1,4 +1,4 @@
-# Dev Notes
+# Dev Note
 
 ## Initiate Scrapy Dev Env Docker Container
 
