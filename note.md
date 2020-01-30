@@ -5,6 +5,7 @@
 ```bash
 $ docker run -it --rm -v /c/Users/Benny/Documents/Projects/learn_scrapy:/learn_scrapy scrapy-dev-env /bin/bash
 $ cd learn_scrapy/
+# $ export LANG=en_US.UTF-8 # if encountered 'UnicodeEncodeError: 'ascii' codec can't encode characters in ordinal not in range(128)'
 ```
 
 ## References
