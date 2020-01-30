@@ -11,7 +11,7 @@ chorme_options.add_argument("--disable-gpu")
 class NeinSpider(scrapy.Spider):
     name = 'nein'
     allowed_domains = ['editorialmanager.com']
-    start_urls = ['https://www.editorialmanager.com/nein/default.aspx']
+    start_urls = ['https://www.editorialmanager.com/nein/Default.aspx?pg=AuthorMainMenu.aspx']
 
     def parse(self, response):
         print(type(response))  # scrapy.http.response.html.HtmlResponse
@@ -21,3 +21,6 @@ class NeinSpider(scrapy.Spider):
         with open('/learn_scrapy/tmp/response_content.html', 'w', encoding='utf-8') as f:
             f.write(response.text)
             f.flush()
+
+    def parse_login(self, response):
+        pass
